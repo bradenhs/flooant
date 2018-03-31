@@ -1,0 +1,6 @@
+{
+  "defaultSeverity": "warning",
+  "rules": {
+    "triple-equals": true
+  }
+}
