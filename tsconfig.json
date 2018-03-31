@@ -14,6 +14,8 @@
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "downlevelIteration": true,
+    "skipLibCheck": true,
     "plugins": [{ "name": "tslint-language-service" }]
-  }
+  },
+  "exclude": ["node_modules"]
 }
