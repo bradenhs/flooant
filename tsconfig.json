@@ -7,13 +7,13 @@
     "importHelpers": true,
     "baseUrl": "./",
     "esModuleInterop": true,
-    "plugins": [{ "name": "tslint-language-service" }],
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "forceConsistentCasingInFileNames": true,
     "noFallthroughCasesInSwitch": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "downlevelIteration": true
+    "downlevelIteration": true,
+    "plugins": [{ "name": "tslint-language-service" }]
   }
 }
