@@ -3,14 +3,16 @@
   "private": true,
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
-    "start": "screwy",
     "app": "react-native-scripts start",
-    "server": "ts-node-dev -r tsconfig-paths/register --respawn --no-notify ./server/main/index.ts",
+    "server":
+      "ts-node-dev -r tsconfig-paths/register --respawn --no-notify ./server/main/index.ts",
     "android": "react-native-scripts android",
     "ios": "react-native-scripts ios",
     "lint": "tslint -p tsconfig.json",
-    "checker": "tsc --project tsconfig.json --noEmit --watch | build-error-notifier",
-    "db-run": "docker run -it --name=flooant-db --rm -p 3306:3306 -e \"MYSQL_ALLOW_EMPTY_PASSWORD=yes\" -e \"MYSQL_DATABASE=flooant\" mysql:5.7.21",
+    "checker":
+      "tsc --project tsconfig.json --noEmit --watch | build-error-notifier",
+    "db-run":
+      "docker run -it --name=flooant-db --rm -p 3306:3306 -e \"MYSQL_ALLOW_EMPTY_PASSWORD=yes\" -e \"MYSQL_DATABASE=flooant\" mysql:5.7.21",
     "db-connect": "docker exec -it flooant-db bash -c \"mysql -u root flooant\""
   },
   "dependencies": {
